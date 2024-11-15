@@ -2,7 +2,7 @@
 
 const contenedorProductos = document.getElementById("contenedorProductos"); 
 
-fetch("http://localhost:8080/productos")
+fetch("https://api-productos-production.up.railway.app/productos")
     .then(response => response.json() )
     .then(data => {
         renderizarProductos(data);
